@@ -28,8 +28,8 @@
               position="0 1.6 0">
          <a-cursor fuse="true" fuse-timeout="800"></a-cursor>
 
-        <a-text value="" width="4" id="score"
-                color="black" font="mozillavr" position="0 -.5 -1"
+        <a-text value="" width="2" id="score"
+                color="black" font="mozillavr" position="0 -1 -1"
                 anchor="center" align="center"></a-text>
 
     </a-entity>
@@ -108,7 +108,7 @@
         var premios= Array.from(document.querySelectorAll(`.premio`))
             var score= premios.length
 
-        scoreEl.setAttribute(`value`,`Te faltan ` + score + `para ganar!`)
+        scoreEl.setAttribute(`value`,`Te faltan ` + score + ` para ganar!`)
 
         premios.forEach(function (premio) {
             premio.addEventListener(`click`, function () {
